@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&family=Gentium+Plus:ital@1&family=Kdam+Thmor+Pro&family=Oswald:wght@200&family=Work+Sans:wght@300&display=swap');
+
+/* Max width of the page */
+#content {
+    max-width: 1600px;
+    background-color: #2c3433 ;
+}
+
+/* The actual grid for the page */
+#home_grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-family: 'Charis SIL', serif;;
+    font-size: 1em;
+}
+
+p {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    font-size: 1em;
+}
+
+/* Header of the page */
+header {
+    grid-row: 1/2;
+    background-color: rgb(17, 17, 17);
+    /* width: 100%; */
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* width: 100%; */
+}
+/* Navigation Links */
+
+/* .navigation a:hover {
+    background-color: white;
+    color: black;
+} */
+
+.navigation a:hover {
+    /* background-color: rgb(143, 143, 143); */
+    background-color: #2abaa7;
+    overflow: hidden;
+    /* color: black; */
+}
+
+.navigation a.active {
+    background-color: black;
+    color: white;
+}
+
+.navigation a:hover:nth-of-type(1) {
+    background-color: rgb(17, 17, 17);
+}
+
+.navigation a:nth-of-type(1) {
+    margin-left: 30%;
+    grid-column: 1/2;
+}
+
+.logo {
+    width: 70%;
+}
+
+.navigation a:nth-of-type(2) {
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.navigation a:nth-of-type(3) {
+    grid-column: 3/4;
+    text-align: center;
+    color: white;
+    /* margin: auto; */
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.navigation a:nth-of-type(4) {
+    grid-column: 4/5;
+    text-align: center;
+    color: white;
+    margin: auto;
+    /* padding-left: 50%; */
+    margin-left: 50%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.navigation a:nth-of-type(5) {
+    grid-column: 5/6;
+    text-align: center;
+    color: white;
+    margin: auto;
+    /* padding-left: 60%; */
+    /* padding-right: 100%; */
+    margin-left: 70%;
+    margin-right: -10%;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+    font-size: 100%;
+    /* border: 2px solid green; */
+}
+
+/* Home page start */
+/* Body of the page */
+main {
+    grid-row: 2/8;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+/* First Image and Text */
+.first_image_1 {
+    grid-row: 1/5;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.home_img {
+    grid-row: 1/4;
+    width: 100%;
+}
+
+.first_image_1 p {
+    grid-row: 4/6;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    /* color: white; */
+    font-size: 100%;
+}
+
+/* Second Image and Text */
+.second_image_1 {
+    grid-row: 5/10;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.home_img_3 {
+    grid-row: 1/6;
+    width: 100%;
+}
+
+.second_image_1 p:nth-of-type(1) {
+    grid-row: 1/2;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: white;
+    font-size: 100%;
+}
+
+.second_image_1 p:nth-of-type(2) {
+    grid-row: 2/3;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: white;
+    font-size: 100%;
+}
+
+.second_image_1 p:nth-of-type(3) {
+    grid-row: 3/4;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: white;
+    font-size: 100%;
+}
+
+.second_image_1 p:nth-of-type(4) {
+    grid-row: 4/5;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: white;
+    font-size: 100%;
+}
+
+.second_image_1 p:nth-of-type(5) {
+    grid-row: 5/6;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: white;
+    font-size: 100%;
+}
+/* Home page end */
+
+/* Footer of the page */
+.footer_grid {
+    grid-row: 8/10;
+}
+
+.footer_section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: rgb(17, 17, 17);
+}
+
+/* Body of the footer */
+.footer_section a:nth-of-type(1) {
+    grid-column: 1/2;
+    margin-left: auto;
+    padding-right: 40%;
+}
+
+.footer_section a .logo_footer {
+    width: 90%;
+}
+
+.footer_section h3:nth-of-type(1) {
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+    margin-left: 20%;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.footer_section h3:nth-of-type(2) {
+    grid-column: 3/4;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 50%;
+    font-size: 100%;
+}
+
+.footer_section h3:nth-of-type(3) {
+    grid-column: 4/5;
+    text-align: center;
+    color: white;
+    margin-top: 25%;
+    margin-left: 50%;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.footer_section h3 a {
+    color: white;
+    font-family: 'Charis SIL', serif;;
+    text-decoration: none;
+}
+
+.footer_section img:nth-of-type(1) {
+    grid-column: 5/6;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+.facebook_icon {
+    width: 50%;
+    border-radius: 50px;
+}
+
+.footer_section img:nth-of-type(2) {
+    grid-column: 6/7;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+.footer_section h3:hover:nth-of-type(2) {
+    /* background-color: rgb(143, 143, 143); */
+    background-color: #2abaa7;
+    /* color: black; */
+}
+
+.footer_section h3:hover:nth-of-type(3) {
+    /* background-color: rgb(143, 143, 143); */
+    background-color: #2abaa7;
+    /* color: black; */
+}
+
+.instagram_icon {
+    width: 50%;
+    border-radius: 50px;
+}
+
+.footer_section img:nth-of-type(3) {
+    grid-column: 7/8;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
+.twitter_icon {
+    width: 50%;
+    border-radius: 50px;
+}
+
+/* Designs page start */
+.first_text h1,
+.second_text h1,
+.third_text h1,
+.fourth_text h1 {
+    color: #5ec8e2;
+    text-align: center;
+}
+
+.home_grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.first_image_1 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    margin: auto;
+}
+
+.first_image_1 .home_img {
+    width: 100%;
+    /* height: 70%; */
+}
+
+.first_image_1 p {
+    text-align: center;
+    font-size: 100%;
+}
+
+.first_text {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    /* border: 2px solid green; */
+    /* margin-left: 20%; */
+    margin-right: -45%;
+    /* padding-right: 20%; */
+}
+
+.first_text h1, 
+.first_text p {
+    text-align: center;
+    font-size: 100%;
+}
+
+.second_text {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    /* margin-right: 20%; */
+    margin-left: -45%;
+    /* border: 2px solid green; */
+}
+
+.second_text h1, 
+.second_text p {
+    text-align: center;
+    font-size: 100%;
+}
+
+.third_text {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-right: -45%;
+    /* margin-left: 20%; */
+    /* border: 2px solid green; */
+}
+
+.third_text h1, 
+.third_text p {
+    text-align: center;
+    font-size: 100%;
+}
+
+.fourth_text {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    /* margin-right: 20%; */
+    margin-left: -45%;
+    /* border: 2px solid green; */
+}
+
+.fourth_text h1, 
+.fourth_text p {
+    text-align: center;
+    font-size: 100%;
+}
+
+/* .second_image {
+    grid-column: 1/4;
+    grid-row: 5/6;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+} */
+
+.home_img_2 {
+    width: 75%;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    /* border: 2px solid green; */
+    /* margin: auto; */
+}
+
+.home_img_2_p {
+    width: 65%;
+    margin: auto;
+    font-size: 100%;
+    grid-column: 2/4;
+    grid-row: 5/6;
+    background-color: #ffffff;
+    /* background-color: rgb(129, 129, 129); */
+    color: black;
+    text-align: center;
+    /* margin: auto; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    /* padding-right: 10%; */
+    margin: 5% 0 10% 0;
+    display: inline-block;
+    border: none;
+    background: #ffffff;
+}
+
+input[type=number] {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 5% 0 10% 0;
+    display: inline-block;
+    border: none;
+    background: #ffffff;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(155, 154, 154);
+    outline: none;
+}
+
+hr {
+    border: 1px solid #5ec8e2;
+    margin-bottom: 5%;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 4% 5%;
+    margin: 2% 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: transform;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    opacity:1;
+    transform: scale(1.1);
+}
+
+.submit_button {
+    padding: 14px 20px;
+    background-color: #5ec8e2;
+}
+
+.body {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
